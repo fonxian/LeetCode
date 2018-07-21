@@ -1,0 +1,17 @@
+```scala
+
+object Solution {
+    def twoSum(nums: Array[Int], target: Int): Array[Int] = {
+        for (i <- 0 to nums.length - 2) {
+            val index = nums(i)
+            for (j <- (i + 1) to nums.length - 1) {
+                if (index + nums(j) == target) {
+                    return Array(i, j)
+                }
+            }
+        }
+        Array(0,0)
+    }
+}
+
+```

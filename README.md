@@ -1,1 +1,1 @@
-dir
+# LeetCode by Scala
