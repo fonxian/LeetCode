@@ -16,7 +16,7 @@ Complete solutions to Leetcode problems, updated daily.
 
 | # | Title | Tags |
 |---|---|---|
-| 001 | [Two Sum](https://github.com/fonxian/leetcode/tree/master/solution/001.Two_Sum) | `Array`, `Hash Table` |
+| 001 | [Two Sum](https://github.com/fonxian/leetcode/tree/master/solution/001.two-sum) | `Array`, `Hash Table` |
 
 
 ### Medium
