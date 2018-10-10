@@ -17,7 +17,7 @@ Complete solutions to Leetcode problems, updated daily.
 | # | Title | Tags |
 |---|---|---|
 | 001 | [Two Sum](https://github.com/fonxian/leetcode/tree/master/solution/001.two-sum) | `Array`, `Hash Table` |
-| 070 | [Climbing Stairs](https://github.com/fonxian/leetcode/tree/master/solution/001.two-sum) | `DP` |
+| 070 | [Climbing Stairs](https://github.com/fonxian/leetcode/tree/master/solution/070.climbing-stairs) | `DP` |
 
 
 ### Medium
