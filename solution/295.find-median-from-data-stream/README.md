@@ -1,4 +1,4 @@
-## 爬楼梯
+## 数据流的中位数
 ### 题目描述
 
 中位数是有序列表中间的数。如果列表长度是偶数，中位数则是中间两个数的平均值。
@@ -31,9 +31,53 @@ findMedian() -> 2
 
 ### 解法
 
-方法一：使用数组、排序算法来解。【提交结果超时】
+####方法一：使用大根堆、小根堆来解。【正解】####
 
-java版
+大根堆放较小的值，小根堆放较大的值，这样中间值就集中在两个堆的根节点上。
+
+```java
+
+private static PriorityQueue<Integer> bigRoot;
+    private static PriorityQueue<Integer> smallRoot;
+
+    /** initialize your data structure here. */
+    public MedianFinder() {
+        bigRoot = new PriorityQueue<>(Comparator.reverseOrder());
+        smallRoot = new PriorityQueue<>(Integer::compareTo);
+    }
+
+    public void addNum(int num) {
+        if(bigRoot.size() == 0 || bigRoot.peek() > num){
+            bigRoot.offer(num);
+        }else{
+            smallRoot.offer(num);
+        }
+        int bigRootSize = bigRoot.size();
+        int smallRootSize = smallRoot.size();
+        if(bigRootSize-smallRootSize > 1){
+            smallRoot.offer(bigRoot.poll());
+        }
+        if(smallRootSize-bigRootSize > 1){
+            bigRoot.offer(smallRoot.poll());
+        }
+    }
+
+    public double findMedian() {
+        int bigRootSize = bigRoot.size();
+        int smallRootSize = smallRoot.size();
+        if(bigRootSize == smallRootSize){
+            return(bigRoot.peek() + smallRoot.peek())/2.0;
+        }
+        return bigRootSize>smallRootSize?bigRoot.peek():smallRoot.peek();
+    }
+
+```
+
+
+####方法二：使用数组、排序算法来解。【提交结果超时】####
+
+相比于方法一，每次查询中间值都会对整个数组进行排序，性能相对较差。方法一的优点在于，每次插入数值，都能以较小的代价来维护堆。
+
 
 
 ```java
