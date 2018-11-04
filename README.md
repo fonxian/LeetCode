@@ -26,7 +26,16 @@ Complete solutions to Leetcode problems, updated daily.
 |---|---|---|
 | 002 | [Add Two Numbers](https://github.com/fonxian/leetcode/tree/master/solution/002.add-two-numbers) | `Linked List`, `Math` |
 | 003 | [Longest-Substring](https://github.com/fonxian/leetcode/tree/master/solution/003.longest-substring-without-repeating-characters) | `Queue` |
+| 049 | [Group Anagrams](https://github.com/fonxian/leetcode/tree/master/solution/049.group-anagrams) | `List`,`Sort` |
+| 144 | [Binary Tree Preorder Traversal](https://github.com/fonxian/leetcode/tree/master/solution/144.binary-tree-preorder-traversal) | `Tree` |
 
+
+### Hard
+
+| # | Title | Tags |
+|---|---|---|
+| 145 | [Binary Tree Postorder Traversal](https://github.com/fonxian/leetcode/tree/master/solution/145.binary-tree-postorder-traversal) | `Tree` |
+| 295 | [Find Median From Data Stream](https://github.com/fonxian/leetcode/tree/master/solution/295.find-median-from-data-stream) | `Heap` |
 
 
 
